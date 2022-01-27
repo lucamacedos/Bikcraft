@@ -1,12 +1,9 @@
 .bicicletas-container {
   padding-top: 60px;
+  padding-bottom: 120px;
 }
 
 .bicicletas-container h1 {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 40px;
 }
 
@@ -50,5 +47,8 @@
 @media (max-width: 800px) {
   .bicicletas-listas {
     gap: 20px;
+  }
+  .bicicletas-container {
+    padding-bottom: 60px;
   }
 }
