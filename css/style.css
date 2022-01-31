@@ -15,8 +15,11 @@
 @import url("../css/home/depoimento.css");
 @import url("../css/home/seguros.css");
 
-/* Bicicletas */
-@import url("../css/bicicletas/bicicletas-lista.css");
+/* Bicicletas-lista */
+@import url("../css/bicicletas-lista/bicicletas-lista.css");
 
 /* Termos e condições */
 @import url("../css/termos/termos.css");
+
+/* Bicicletas */
+@import url("../css/bicicletas/bicicletas.css");

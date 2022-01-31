@@ -1,0 +1,123 @@
+.bicicletas-bg {
+  background: linear-gradient(to right, var(--cor-c0) 28%, var(--cor-c11) 28%);
+}
+
+.bicicletas {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 40px;
+}
+
+.bicicletas-imagem {
+  display: grid;
+}
+
+.bicicletas-imagem img {
+  grid-area: 1/1;
+}
+
+.bicicletas-imagem span {
+  grid-area: 1/1;
+  margin-top: 20px;
+  place-self: start end;
+  display: inline-block;
+  background-color: var(--cor-c12);
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  place-content: start;
+}
+
+.bicicletas-conteudo h2 {
+  margin-bottom: 20px;
+}
+
+.bicicletas-conteudo h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  margin-bottom: 6px;
+  background: var(--cor-p1);
+}
+
+.bicicletas-conteudo p {
+  margin-bottom: 32px;
+}
+
+.bicicletas-conteudo h2,
+.bicicletas-conteudo p {
+  grid-column: 1/-1;
+}
+
+.bicicletas-conteudo li {
+  display: flex;
+  gap: 8px;
+  justify-items: center;
+}
+
+.bicicletas-conteudo li + li {
+  margin-top: 16px;
+}
+
+.bicicletas-conteudo img {
+  width: 24px;
+}
+
+.bicicletas-conteudo a {
+  align-self: end;
+}
+
+.seta {
+  display: flex;
+  align-items: center;
+}
+
+.seta::after {
+  content: "";
+  display: inline-block;
+  background-image: url("../../img/icones/seta.svg");
+  width: 18px;
+  margin-left: 10px;
+  height: 10px;
+  transition: transform 0.2s;
+}
+
+.seta:hover::after {
+  transform: translateX(5px);
+}
+
+@media (max-width: 900px) {
+  .bicicletas-bg {
+    background: var(--cor-c11);
+  }
+  .bicicletas {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicletas {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-conteudo ul {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto;
+    margin-bottom: 40px;
+  }
+  .bicicletas-conteudo li + li {
+    margin-top: 0px;
+  }
+}
