@@ -1,0 +1,27 @@
+.termos-bg {
+  background: var(--cor-c11);
+  padding: 60px 0px;
+}
+
+.termos-bg p {
+  text-transform: uppercase;
+}
+
+.termos-conteudo {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.termos-conteudo h1 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.termos-conteudo p {
+  max-width: 75ch;
+  margin-bottom: 24px;
+}
+
+.termos-conteudo p + h1 {
+  margin-top: 40px;
+}
