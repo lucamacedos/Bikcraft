@@ -1,0 +1,142 @@
+#bicicleta-container {
+  margin-bottom: 60px;
+}
+
+#bicicleta-preco {
+  font: 500 2rem/1.25 "Roboto", sans-serif;
+}
+
+.bicicleta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.bicicleta-lista > h2 {
+  margin-bottom: 32px;
+}
+
+.bicicleta-imagem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-content: start;
+}
+
+.bicicleta-imagem img {
+  flex: 1;
+  min-width: 250px;
+}
+
+.bicicleta-imagem img:first-child {
+  min-width: 100%;
+}
+
+.bicicleta-compra {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-items: center;
+  gap: 10px 12px;
+  margin-bottom: 40px;
+}
+
+.bicicleta-compra a {
+  grid-row: span 2;
+}
+
+.bicicleta-entrega {
+  display: flex;
+  justify-self: start;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background-color: var(--cor-c12);
+}
+
+.bicicleta-entrega img {
+  margin-right: 11px;
+  width: 16px;
+  height: 16px;
+}
+
+.bicicleta-estoque {
+  display: flex;
+  justify-self: start;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background-color: var(--cor-c12);
+}
+
+.bicicleta-estoque img {
+  margin-right: 11px;
+  width: 16px;
+  height: 16px;
+}
+
+.bicicleta-informacoes {
+  background-color: var(--cor-c12);
+  padding: 32px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+.bicicleta-lista h4 {
+  margin-bottom: 12px;
+}
+
+.bicicleta-informacoes ul {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bicicleta-informacoes img {
+  width: 25px;
+  margin-bottom: 5px;
+}
+
+.bicicleta-informacoes h2 {
+  margin-bottom: 10px;
+}
+
+.bicicleta-peso {
+  background-color: var(--cor-c12);
+  padding: 32px;
+  border-radius: 4px;
+  max-width: 62ch;
+}
+
+.bicicleta-peso p {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cor-c11);
+  padding: 5px 0px;
+}
+
+.bicicleta-peso p:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 900px) {
+  .bicicleta {
+    grid-template-columns: 1fr;
+  }
+  .bicicleta-lista {
+    grid-row: 1;
+  }
+  #bicicleta-preco {
+    font: 500 1.2rem/1.25 "Roboto", sans-serif;
+  }
+  #bicicleta-container {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .bicicleta-compra {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+  .bicicleta-informacoes ul {
+    grid-template-columns: 1fr;
+  }
+}

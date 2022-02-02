@@ -7,6 +7,10 @@
   padding-bottom: 40px;
 }
 
+#bicicletas-listas {
+  padding: 0px;
+}
+
 .bicicletas-listas {
   display: flex;
   gap: 40px;
