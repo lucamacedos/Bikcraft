@@ -32,3 +32,7 @@
 /* Bicicletas */
 @import url("../css/bicicleta/bicicleta.css");
 @import url("../css/bicicleta/informacoes.css");
+
+/* Contato */
+@import url("../css/contato/formulario.css");
+@import url("../css/contato/lojas.css");
