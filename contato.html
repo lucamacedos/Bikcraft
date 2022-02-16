@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
 
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
 <body>
   <header class="header-bg">
     <div class="container header-container">
-      <a href="./"><img src="./img/bikcraft.svg" alt="Logo"></a>
+      <a href="./"><img src="./img/bikcraft.svg" alt="Logo" width="136" height="32"></a>
       <nav>
         <ul class="header-menu font-1-m cor-c0">
           <li><a href="./bicicletas.html">Bicicletas</a></li>
@@ -61,7 +62,7 @@
           </div>
         </div>
         <div class="contato-formulario">
-          <form action="./">
+          <form class="form" action="./">
             <div class="contato-nome">
               <label for="nome">Nome</label>
               <input type="text" id="nome" placeholder="Seu Nome">
@@ -94,16 +95,20 @@
             <img src="./img/lojas/rj.jpg" alt="">
           </div>
           <div class="lojas-conteudo">
-            <h2 class="col2 font-1-xl cor-c11">Rio de Janeiro</h2>
+            <h2 id="col-2" class="font-1-xl cor-c11">Rio de Janeiro</h2>
             <div class="loja-lista font-2-s cor-c8">
               <p>Rua Ali Perto, 25</p>
               <p>Rio de Janeiro - RJ</p>
             </div>
             <div class="loja-lista font-2-s cor-c8">
-              <p>rio@bikcraft.com</p>
-              <p>21 9999-9999</p>
+              <a class="font-2-s cor-c8" href="mailto:rio@bikcraft.com">
+                <p>rio@bikcraft.com</p>
+              </a>
+              <a class="font-2-s cor-c8" href="tel: +55 21 9999-9999">
+                <p>21 9999-9999</p>
+              </a>
             </div>
-            <p class="col2 font-1-m-b cor-c11">08-18h de seg à dom</p>
+            <p id="col-2" class="font-1-m-b cor-c11">08-18h de seg à dom</p>
           </div>
         </div>
 
@@ -112,16 +117,20 @@
             <img src="./img/lojas/sp.jpg" alt="">
           </div>
           <div class="lojas-conteudo">
-            <h2 class="col2 font-1-xl cor-c11">São Paulo</h2>
+            <h2 id="col-2" class="col2 font-1-xl cor-c11">São Paulo</h2>
             <div class="loja-lista font-2-s cor-c8">
               <p>Rua Ali Perto, 25</p>
               <p>São Paulo - <SPan></SPan></p>
             </div>
             <div class="loja-lista font-2-s cor-c8">
-              <p>sp@bikcraft.com</p>
-              <p>11 9999-9999</p>
+              <a class="font-2-s cor-c8" href="mailto:rio@bikcraft.com">
+                <p>sp@bikcraft.com</p>
+              </a>
+              <a class="font-2-s cor-c8" href="tel: +55 11 9999-9999">
+                <p>11 9999-9999</p>
+              </a>
             </div>
-            <p class="col2 font-1-m-b cor-c11">08-18h de seg à dom</p>
+            <p id="col-2" class="font-1-m-b cor-c11">08-18h de seg à dom</p>
           </div>
         </div>
       </div>

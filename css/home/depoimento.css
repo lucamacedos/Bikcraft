@@ -1,25 +1,22 @@
 .depoimento-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: end;
   background-color: var(--cor-p1);
-  overflow: hidden;
+  align-items: end;
 }
 
 .depoimento {
-  padding: 40px 40px 80px 80px;
+  padding: 49px 40px 80px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 .depoimento-container img {
   width: 100%;
-  height: 100%;
+  height: 530px;
   object-fit: cover;
   border-radius: 0px;
-}
-
-.depoimento-imagem {
-  width: 100%;
-  height: 100%;
 }
 
 .depoimento h1 {
@@ -48,7 +45,7 @@
 }
 
 .depoimento > span {
-  font: 600 1.2rem/1.33 "Poppins", serif;
+  font: 600 1.1rem/1.33 "Poppins", serif;
 }
 
 @media (max-width: 800px) {
@@ -62,6 +59,7 @@
     padding: 40px 20px;
     margin: auto;
     text-align: center;
+    align-items: center;
   }
   .depoimento h1 {
     font: 900 1.5rem/1.2 "Merriweather", serif;

@@ -15,7 +15,7 @@
   color: var(--cor-c5);
 }
 
-.footer-redes {
+.footer-redes ul {
   display: flex;
   gap: 30px;
 }
@@ -28,7 +28,7 @@
   margin-bottom: 15px;
 }
 
-.footer-contato li:nth-child(even):after {
+.contato-informacoes li:nth-child(even):after {
   content: "";
   display: block;
   max-width: 360px;

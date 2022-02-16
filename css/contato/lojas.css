@@ -10,10 +10,6 @@
   gap: 40px;
 }
 
-.col2 {
-  grid-column: span 2;
-}
-
 .lojas h1 {
   margin-bottom: 60px;
 }
