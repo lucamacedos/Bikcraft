@@ -22,6 +22,8 @@
 
 .bicicletas-listas img {
   min-width: 280px;
+  max-height: 500px;
+  object-fit: cover;
 }
 
 .bicicletas-listas h2 {
