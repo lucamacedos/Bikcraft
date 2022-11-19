@@ -1,0 +1,77 @@
+/* Estilos Principais */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+
+.header-bg {
+    background-color: #000000;
+}
+
+.header-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header-menu a {
+    padding: 12px 0px;
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+@media (max-width: 800px) {
+    .header-menu {
+        gap: 20px;
+    }
+    
+    .header-menu a {
+        padding: 10px 15px;
+        background-color: #111111;
+        border-radius: 5px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-menu a {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    .header-menu {
+        gap: 12px;
+    }
+}
